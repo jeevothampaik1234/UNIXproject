@@ -1,0 +1,16 @@
+Sep 30 09:12:45 demo-host systemd[1]: Starting Daily Cleanup of Temporary Directories...
+Sep 30 09:12:45 demo-host systemd[1]: Started Daily Cleanup of Temporary Directories.
+Sep 30 09:13:01 demo-host CRON[1001]: (root) CMD (run-parts /etc/cron.hourly)
+Sep 30 09:14:05 demo-host sshd[1023]: Accepted password for alice from 192.168.1.105 port 50532 ssh2
+Sep 30 09:14:05 demo-host sshd[1023]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Sep 30 09:14:15 demo-host sudo[1030]:    alice : TTY=pts/0 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/apt update
+Sep 30 09:14:15 demo-host sudo[1030]: pam_unix(sudo:session): session opened for user root by alice(uid=0)
+Sep 30 09:14:18 demo-host sudo[1030]: pam_unix(sudo:session): session closed for user root
+Sep 30 09:15:10 demo-host kernel: [ 1321.458123] eth0: link up
+Sep 30 09:16:22 demo-host sshd[1050]: Failed password for invalid user admin from 203.0.113.10 port 43211 ssh2
+Sep 30 09:16:25 demo-host sshd[1050]: Connection closed by 203.0.113.10 port 43211
+Sep 30 09:17:01 demo-host CRON[1066]: (root) CMD (run-parts /etc/cron.daily)
+Sep 30 09:18:34 demo-host sshd[1072]: Accepted publickey for bob from 10.0.0.25 port 60922 ssh2
+Sep 30 09:18:34 demo-host sshd[1072]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Sep 30 09:20:10 demo-host sshd[1072]: pam_unix(sshd:session): session closed for user bob
+Sep 30 09:21:02 demo-host kernel: [ 1455.781002] audit: type=1100 audit(1696064462.001:231): pid=1101 uid=0 auid=1000 ses=3 msg='op=PAM:authentication grantors=pam_unix acct="bob" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
